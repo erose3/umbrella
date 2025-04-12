@@ -68,11 +68,11 @@ temp = hour0.fetch("temperature")
 # pp hour0_rain
 
 if hour0_rain > 0
-    pp "The forecast right now says '#{hour0_summary}'. You should bring an umbrella!"
+    pp "The forecast right now is #{hour0_summary.downcase}. You should bring an umbrella!"
 else
-    pp "The forecast right now says '#{hour0_summary}'. You should be good to go!"
+    pp "The forecast right now is #{hour0_summary.downcase}. You should be good to go!"
 end
 
 if temp < 60
-  pp "The temperature is #{temp} so you might want to bring a jacket too."
+  pp "The temp is #{temp} so you might want to bring a jacket too."
 end
